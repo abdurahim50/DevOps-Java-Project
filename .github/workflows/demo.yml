@@ -10,6 +10,13 @@ jobs:
      steps:
        - name: Print Hello
          run: echo "Hello from GitHub Actions"
+
+       - name: Checkout repository
+         uses: actions/checkout@v7
+         
+       - name: Show repository
+         run: ls -la 
+
          
        - name: Print message 
          run: echo "Hello"
