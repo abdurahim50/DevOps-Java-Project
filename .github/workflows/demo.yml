@@ -9,11 +9,28 @@ env:
 jobs:
   demo:
      runs-on: ubuntu-latest
+     env:
+       ENVIRONMENT: development
 
      steps:
-       - name: Show Print Variable
-         run: echo "Application is $APP_NAME"
-          
+       - name: Print Variable
+         run: |
+           echo "Application is $APP_NAME"
+           echo "Environment: $ENVIRONMENT
+        
+  second_demo:
+     runs-on: ubuntu-latest
+     env:
+       ENVIRONMENT: development
+
+     steps:
+       - name: Print Variable
+         run: |
+           echo "Application is $APP_NAME"
+           echo "Environment: $ENVIRONMENT
+
+  
+ 
 
 
 
