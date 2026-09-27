@@ -8,29 +8,15 @@ jobs:
      runs-on: ubuntu-latest
 
      steps:
-       - name: Print Hello
-         run: echo "Hello from GitHub Actions"
-
-       - name: Checkout repository
-         uses: actions/checkout@v7
-         
-       - name: Show repository
-         run: ls -la 
-
-         
-       - name: Print message 
-         run: echo "Hello"
-         
-       - name: Print Hi
-         run: echo "Hi"
-         
-       - name: Print bye
+       - name: Show GitHub Information
          run: |
-            pwd
-            ls -la
-            whoami
-
-
+          echo "Repository: ${{ github.repository }}"
+          echo "Triggered by: ${{ github.actor }}"
+          echo "Branch/Ref: ${{ github.ref }}"
+          echo "Commit: ${{ github.sha }}"
+          echo "Event: ${{ github.event_name }}"
+          echo "Workflow: ${{ github.workflow }}"
+         
 
 
 
