@@ -16,18 +16,16 @@ jobs:
       - name: Print Variable
         run: |
           echo "Application is $APP_NAME"
-          echo "Environment: $ENVIRONMENT"
+          echo "Environment is $ENVIRONMENT"
 
   second_demo:
     runs-on: ubuntu-latest
-    env:
-      ENVIRONMENT: development
 
     steps:
       - name: Print Variable
         run: |
           echo "Application is $APP_NAME"
-          echo "Environment: $ENVIRONMENT"
+          echo "Environment is $ENVIRONMENT"
 
   
  
