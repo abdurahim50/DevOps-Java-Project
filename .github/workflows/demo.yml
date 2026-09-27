@@ -1,6 +1,6 @@
 name: My First GitHub Action Workflow
 
-on: 
+on:
   workflow_dispatch:
 
 env:
@@ -8,26 +8,26 @@ env:
 
 jobs:
   demo:
-     runs-on: ubuntu-latest
-     env:
-       ENVIRONMENT: development
+    runs-on: ubuntu-latest
+    env:
+      ENVIRONMENT: development
 
-     steps:
-       - name: Print Variable
-         run: |
-           echo "Application is $APP_NAME"
-           echo "Environment: $ENVIRONMENT
-        
+    steps:
+      - name: Print Variable
+        run: |
+          echo "Application is $APP_NAME"
+          echo "Environment: $ENVIRONMENT"
+
   second_demo:
-     runs-on: ubuntu-latest
-     env:
-       ENVIRONMENT: development
+    runs-on: ubuntu-latest
+    env:
+      ENVIRONMENT: development
 
-     steps:
-       - name: Print Variable
-         run: |
-           echo "Application is $APP_NAME"
-           echo "Environment: $ENVIRONMENT
+    steps:
+      - name: Print Variable
+        run: |
+          echo "Application is $APP_NAME"
+          echo "Environment: $ENVIRONMENT"
 
   
  
